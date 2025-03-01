@@ -48,14 +48,6 @@ We follow previous work and use the Wikipedia as our document corpus, which can 
 We use the [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) as the retrieval model to pair each query with top-20 documents. The pre-trained ColBERT checkpoint can be downloaded in either its official repo or its [link](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).
 You can deploy the ColBERT retrieval or other customized retrieval model in your local environment to pre-process the dataset. Or you can download our processed dataset as follows `Training Data Download`.
 
-## Unified the format
-
-We use the code in `./src/prepare/prepare.py` to pre-process the raw datasets. Below shows an concrete example in our reformatted datasets.
-
-```json
-
-```
-
 
 # Our method
 
