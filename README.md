@@ -195,15 +195,12 @@ You can directly download our pre-processed datasets, which will be provided aft
 
 The warmup learning dataset can be founded in [Huggingface dataset]().
 
-### Download Training Checkpoint
-
-The trained checkpoints will be released in Huggingface after the anonymous period.
-
 
 ## Todo
+- [ ] Our paper will be released as soon as possible
 - [ ] We will release the inference trajectories for each trained checkpoint.
 - [ ] We will release the warmup learning datasets and our data synthetic code.
-- [ ] The checkpoints will be released.
+- [ ] Checkpoints will be released.
 
 ## Acknowledgement
 
