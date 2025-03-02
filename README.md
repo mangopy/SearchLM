@@ -193,8 +193,11 @@ You can directly download our pre-processed datasets, which will be provided aft
 
 ### Download the warmup learning dataset
 
-The warmup learning dataset can be founded in [Huggingface dataset]().
+The warmup learning dataset will be released in [Huggingface dataset]() as soon as possible.
 
+### Download the model checkpoint
+
+We first release two trained search agents with different parameter size, including `Search-agent-Mistral-24B` andd `Search-agent-Llama-3.1-8B`. Please see our [Huggingface Collection](https://huggingface.co/collections/mangopy/latent-search-simulator-679f5f84575df6520dc60b3d) for more details. You can download their weight and conduct inference using our `inference` code.
 
 ## Todo
 - [ ] Our paper will be released as soon as possible
