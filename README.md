@@ -1,6 +1,6 @@
 # Agentic Search
 
-This work aims to enable LM-based search agents, which can actively seek information, select key knowledge and record useful evidence iteratively and summarize the final answer.
+This work proposes the `agentic search` which enable the LLMs as search agents, which can actively seek information, select key knowledge and record useful evidence iteratively and summarize the final answer. Compared with previous RAG methods, the key of our agentic search is the reasoning technique.
 
 ## Environment
 
