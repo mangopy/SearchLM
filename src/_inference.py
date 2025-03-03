@@ -9,7 +9,7 @@ from vllm import LLM, SamplingParams
 from src.utilize.apis import get_from_openai, document_retrieval
 from src.utilize.utilize import printf
 
-BEST_OF = os.environ.get('best_of', 8)
+BEST_OF = os.environ.get('b est_of', 8)
 N = os.environ.get('N', 1)
 printf(f"HYPER> Best of = {BEST_OF}, return N = {N}")
 
