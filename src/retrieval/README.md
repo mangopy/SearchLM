@@ -7,10 +7,10 @@ We follow previous work and use the [Wikipedia 2018](https://dl.fbaipublicfiles.
 ## Our official retrieval model
 In our official experiment, we use the [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) as the retrieval model to pair each query or sub-query with top-k (k=20) documents. The pre-trained ColBERT checkpoint can be downloaded in either its official repo or its [link](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).
 Since the ColBERT repo may update, to make the deployment easier, we copy the version of ColBERT that used in our experiment in this repo, e.g., in `src/retrieval/ColBERT` folder.
-You can deploy a out-of-box *ColBERT* model in your experimental environment as following.
+After download the corpus, you can deploy a out-of-box *ColBERT* model in your experimental environment as following.
 1. Documents -> Embeddings: encode the document corpus
-```python
-
+```shell
+python index.py
 ```
 You can also directly download the encoded embedding used in our experiment. Please click this [link]() to download.
 2. Deploy the retrieval through `Flask` library: deploy your retrieval model, making it can be accessed through `python requests`.
