@@ -210,19 +210,9 @@ You can directly download our pre-processed datasets, which will be provided aft
 | wikimultihop_dev.json | Pre-processed data of the 2WikimultihopQA dataset     | [Google drive](https://drive.google.com/file/d/1HAjSFswVDmmfJIAXo4qMLjtAUB8YWjD1/view?usp=sharing) |
 | wow_dev.json          | Pre-processed data of the Wizard-of-Wikipedia dataset | [Google drive](https://drive.google.com/file/d/1B2qSjEzR5w_AG1nZQVEKzeLbCvOCQPLd/view?usp=sharing) |
 
-### Download pre-processed training data
-
-| File                    | Note                                             |                             Link                             |
-| :---------------------- | :----------------------------------------------- | :----------------------------------------------------------: |
-| nq_train.json           | Training data of the NQ dataset                  | [Google drive](https://drive.google.com/file/d/1hw_h2gsroJZiWKRiBb2aIaXGjy1Wvgdw/view?usp=sharing) |
-| hotpotqa_train.json     | Training data of the HotpotQA dataset            | [Google drive](https://drive.google.com/file/d/1GxE-1psv-ksoY313Dq1qgYA98vw7t2JQ/view?usp=sharing) |
-| musiqueqa_train.json    | Training data of the MuSiQue  dataset            | [Google drive](https://drive.google.com/file/d/1REtwkyPwLVL7NVXPvHJ9ezYletsmhSwK/view?usp=sharing) |
-| wikimultihop_train.json | Training data of the 2WikimultihopQA dataset     | [Google drive](https://drive.google.com/file/d/1D6PRMwaj-7ilXajz70OP54h8KNWwOV8l/view?usp=sharing) |
-| wow_train.json          | Training data of the Wizard-of-Wikipedia dataset | [Google drive](https://drive.google.com/file/d/1bv6BK_eWRch60gP5rJ-Q_gPbUQI_EOxZ/view?usp=sharing) |
-
 ### Download the warmup learning dataset
 
-The warmup learning dataset will be released in [Huggingface dataset]() as soon as possible.
+The warmup learning dataset is released in [Huggingface dataset](https://huggingface.co/datasets/mangopy/Agentic-Search-Warmup-dataset).
 
 ### Download the model checkpoint
 
@@ -237,3 +227,7 @@ We first release two trained search agents with different parameter size, includ
 ## Acknowledgement
 
 We sincerely thank prior work, including [RankGPT](https://github.com/sunnweiwei/RankGPT) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
+We also thank the Baidu Inc., Shandong University, and Leiden University for this project.
+
+## Citations
+To be added
