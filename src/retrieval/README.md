@@ -2,7 +2,7 @@
 
 ## Our official retrieval corpus
 
-We follow previous work and use the [Wikipedia 2018](https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz)) as our document corpus, which can be found in [DPR](https://github.com/facebookresearch/DPR/blob/main/dpr/data/download_data.py) repo.
+We follow previous work and use the [Wikipedia 2018](https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz) as our document corpus, which can be found in [DPR](https://github.com/facebookresearch/DPR/blob/main/dpr/data/download_data.py) repo.
 
 ## Our official retrieval model
 In our official experiment, we use the [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) as the retrieval model to pair each query or sub-query with top-k (k=20) documents. The pre-trained ColBERT checkpoint can be downloaded in either its official repo or its [link](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).
