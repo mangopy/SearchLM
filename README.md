@@ -219,15 +219,12 @@ The warmup learning dataset is released in [Huggingface dataset](https://hugging
 We first release two trained search agents with different parameter size, including `Search-agent-Mistral-24B` andd `Search-agent-Llama-3.1-8B`. Please see our [Huggingface Collection](https://huggingface.co/collections/mangopy/latent-search-simulator-679f5f84575df6520dc60b3d) for more details. You can download their weight and conduct inference using our `inference` code.
 
 ## Todo
+- [x] We will release the warmup learning datasets and our data synthetic code.
+- [x] Checkpoints will be released.
 - [ ] Our paper will be released as soon as possible
 - [ ] We will release the inference trajectories for each trained checkpoint.
-- [ ] We will release the warmup learning datasets and our data synthetic code.
-- [ ] Checkpoints will be released.
 
 ## Acknowledgement
 
 We sincerely thank prior work, including [RankGPT](https://github.com/sunnweiwei/RankGPT) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
 We also thank the Baidu Inc., Shandong University, and Leiden University for this project.
-
-## Citations
-To be added
