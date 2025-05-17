@@ -1,9 +1,9 @@
 
 <div align="center">
-   <h1>Search Language Model</h1>
+   <h1>exploratory Search (ExSearch)</h1>
 </div>
 
-This work proposes the `SearchLM` which enable the LLMs as search agents, which can actively seek information, select key knowledge and record useful evidence iteratively and summarize the final answer. Compared with previous RAG methods, the key of our agentic search is the reasoning technique. Here is a concrete example of our agentic search.
+This work proposes the `ExSearch` which enable the LLMs as search agents, which can actively seek information, select key knowledge and record useful evidence iteratively and summarize the final answer. Compared with previous RAG methods, the key of our agentic search is the reasoning technique. Here is a concrete example of our agentic search.
 
 ![img.png](./assets/image/case.png)
 
