@@ -20,6 +20,9 @@ conda create -n exsearch python=3.10
 conda activate exsearch
 pip install -r requirements.txt 
 
+# [Optional]
+pip install pytrec_eval -i https://pypi.tuna.tsinghua.edu.cn/simple
+
 # [Optional] set the `vllm` environment variable when using it.
 VLLM_WORKER_MULTIPROC_METHOD=spawn
 ```
