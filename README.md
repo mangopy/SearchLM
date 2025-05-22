@@ -7,6 +7,10 @@
 If you like our project, please give us a star ⭐ on GitHub for the latest update.
 
 
+
+This work proposes the `ExSearch` which enable the LLMs as search agents, which can actively seek information, select key knowledge and record useful evidence iteratively and summarize the final answer. Compared with previous RAG methods, the key of our agentic search is the reasoning technique. Here is a concrete example of our agentic search.
+
+
 # Environment
 
 1. Install the necessary Python libraries by running the following commands.
@@ -15,6 +19,9 @@ If you like our project, please give us a star ⭐ on GitHub for the latest upda
 conda create -n exsearch python=3.10
 conda activate exsearch
 pip install -r requirements.txt 
+
+# [Optional] set the `vllm` environment variable when using it.
+VLLM_WORKER_MULTIPROC_METHOD=spawn
 ```
 
 > You can customize your own `torch`, `vllm` and `transformers` version based on the backbone LLM you want to use.
@@ -25,6 +32,12 @@ We use the [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) a
 You can deploy the ColBERT retrieval or other customized retrieval model in your local environment to pre-process the dataset. 
 
 In this project, the code `retrieval` folder is directly copied from [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main). You can following the `README.md` in `retrieval` to set up the retriever.
+
+3. [Optional] Please login the `wandb` if use it to record the loss.
+```shell
+wandb login
+```
+(`wandb login --relogin` to force relogin)
 
 
 # Train your Search LLMs via Expectation-Maximization
@@ -110,6 +123,10 @@ PROCEDURE=align CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7  nohup torchrun   --nproc_p
 Note that:
 1. Adding the `--resume_from_checkpoint OUTPUT_CHECKPOINT_FOLDER` argument if the training is broken and you want to continue the training.
 2. You can customize the arguments like `per_device_train_batch_size`, `gradient_accumulation_steps` and `training epoch` based on your own computational resource.
+
+## Case
+
+![img.png](./assets/image/case.png)
 
 # Acknowledgement
 We sincerely thank prior work, including [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
