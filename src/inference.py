@@ -86,13 +86,12 @@ def create_output_file(model_name, input_file, file_type, left, right):
 
 def inference():
     parser = argparse.ArgumentParser(description="Parse configuration.")
-    parser.add_argument("--input_file", type=str, required=False, default="/root/paddlejob/workspace/env_run/output/SearchAgent/data/eval_data/nq_train.json")
-    parser.add_argument("--model_name_or_path", type=str, required=False, default="/root/paddlejob/workspace/env_run/output/SearchAgent/agent_mistral-24/checkpoint-200")
-    parser.add_argument("--output_dir", type=str, required=False, default='/root/paddlejob/workspace/env_run/output/SearchAgent/best_of/8')
+    parser.add_argument("--input_file", type=str, required=False, default="./data/eval_data/nq_train.json")
+    parser.add_argument("--model_name_or_path", type=str, required=True)
+    parser.add_argument("--output_dir", type=str, required=False, default='./log')
     parser.add_argument("--left", type=int, required=False, default=0)
     parser.add_argument("--right", type=int, required=False, default=60000)
-    # parser.add_argument("--shuffle", type=bool, required=False, default=False)
-    
+
     args = parser.parse_args()
 
     if not os.path.exists(args.output_dir):
@@ -113,13 +112,12 @@ def inference():
         json.dump({"score": score, "output": results, "config": vars(args)}, f, indent=4)
         printf(f"WRITING> finish writing the evaluation results on {output_file}...")
 
-    os.system('bash /root/paddlejob/workspace/env_run/output/gpu/gpu.sh')
 
 def entropy():
     parser = argparse.ArgumentParser(description="Parse configuration.")
     parser.add_argument("--inference_file", type=str, required=True)
     parser.add_argument("--model_name_or_path", type=str, required=True)
-    parser.add_argument("--output_dir", type=str, required=False, default='/root/paddlejob/workspace/env_run/output/searchagent/data/train')
+    parser.add_argument("--output_dir", type=str, required=False, default='./data/train')
     parser.add_argument("--left", type=int, required=False, default=0)
     parser.add_argument("--right", type=int, required=False, default=60000)
     parser.add_argument("--epo", type=int, required=False, default=1)
@@ -184,7 +182,6 @@ def entropy():
         if args.is_rank:
             results += [{"messages": e['messages'], "prob": prob} for e in line1['rank']]
 
-    # random.shuffle(results)
     print(cnt, len(results))
     training_data_file = f'epo{args.epo}.training.len={len(results)}.json'
     write_file(results, os.path.join(args.output_dir, training_data_file))
@@ -193,7 +190,7 @@ def entropy():
 def reward():
     parser = argparse.ArgumentParser(description="Parse configuration.")
     parser.add_argument("--inference_file", type=str, required=True)
-    parser.add_argument("--output_dir", type=str, required=False, default='/root/paddlejob/workspace/env_run/output/searchagent/data/train')
+    parser.add_argument("--output_dir", type=str, required=False, default='./data/train')
     parser.add_argument("--left", type=int, required=False, default=0)
     parser.add_argument("--right", type=int, required=False, default=60000)
     parser.add_argument("--epo", type=int, required=False, default=1)
@@ -212,7 +209,6 @@ def reward():
         answers = [line['answer']]
         preds = [line['pred']]
         score = RAGEvaluator.evaluate(preds=preds, answers=answers)
-        # print(score)
         results.append({"messages": line['messages'], "prob": score[args.metric]/100})
         cnt += score[args.metric]
     print(cnt/len(data))

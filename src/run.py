@@ -20,12 +20,8 @@ def set_seed(seed: int):
 if __name__ == '__main__':
     procedure = os.environ['PROCEDURE']
     if procedure == 'align':
-        os.environ['http_proxy'] = "http://agent.baidu.com:8891"
-        os.environ['https_proxy'] = "http://agent.baidu.com:8891"
         train(_type='align')
     elif procedure == 'sft':
-        os.environ['http_proxy'] = "http://agent.baidu.com:8891"
-        os.environ['https_proxy'] = "http://agent.baidu.com:8891"
         train(_type='sft')
     elif procedure == 'formate':
         formate()

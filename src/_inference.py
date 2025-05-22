@@ -101,9 +101,9 @@ def _inference(model: SearchLM, example, max_iter=20, k=10):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Parse configuration.")
-    parser.add_argument("--model_name", type=str, required=False, default='/root/paddlejob/workspace/env_run/output/searchagent/Qwen7_warmup900_hotpot3')
-    parser.add_argument("--input_file", type=str, required=False, default='/root/paddlejob/workspace/env_run/output/searchagent/data/eval_data/hotpotqa_train.json')
-    parser.add_argument("--output_file", type=str, required=False)
+    parser.add_argument("--model_name", type=str, required=True)
+    parser.add_argument("--input_file", type=str, required=True)
+    parser.add_argument("--output_file", type=str, required=True)
 
     args = parser.parse_args()
 
@@ -122,7 +122,3 @@ if __name__ == '__main__':
     print(cnt)
     with open(args.output_file, 'w') as f:
         json.dump(results, f, indent=4)
-
-# k=3{'f1': {'F1': 61.874}, 'em': {'EM': 49.731}, 'acc': {'Acc': 54.541}}
-# k=5{'f1': {'F1': 61.939}, 'em': {'EM': 49.084}, 'acc': {'Acc': 54.168}}
-# k=10 
