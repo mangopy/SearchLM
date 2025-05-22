@@ -1,4 +1,11 @@
-# ExSearch
+
+<div align="center">
+   <h1>ExSearch</h1>
+</div>
+</div>
+
+If you like our project, please give us a star ⭐ on GitHub for the latest update.
+
 
 # Environment
 
@@ -9,6 +16,9 @@ conda create -n exsearch python=3.10
 conda activate exsearch
 pip install -r requirements.txt 
 ```
+
+> You can customize your own `torch`, `vllm` and `transformers` version based on the backbone LLM you want to use.
+> For Qwen and Mistral, we suggest `vllm=0.6.3`, `torch=2.4.0+cu118` and `transformers=4.45.0`.
 
 2. Set up the retrieval module. We follow previous work and use the Wikipedia as our document corpus, which can be found in [DPR](https://github.com/facebookresearch/DPR/blob/main/dpr/data/download_data.py) repo ([Link](https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz)).
 We use the [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) as the retrieval model to pair each query with top-20 documents. The pre-trained ColBERT checkpoint can be downloaded in either its official repo or its [link](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).
