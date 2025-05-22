@@ -1,0 +1,31 @@
+name: colbert37
+channels:
+  - pytorch
+  # - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - gcc=9.4.0
+  - gxx=9.4.0
+  - python=3.8
+  - faiss-gpu
+  - pip=21.0
+  - pytorch=1.13.1
+  - torchaudio=0.13.1
+  - torchvision=0.14.1
+  - cudatoolkit=11.3
+
+#  - pip:
+#    - bitarray
+#    - datasets
+#    - gitpython
+#    - jupyter
+#    - jupyterlab
+#    - ninja
+#    - scipy
+#    - spacy
+#    - tqdm
+#    - transformers
+#    - ujson
+#    - flask
+#    - python-dotenv
