@@ -27,7 +27,7 @@ You can deploy the ColBERT retrieval or other customized retrieval model in your
 In this project, the code `retrieval` folder is directly copied from [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main). You can following the `README.md` in `retrieval` to set up the retriever.
 
 
-# Training your our Search LLMs via Expectation-Maximization
+# Train your Search Language Models via Expectation-Maximization
 
 ## Warmup training
 Before the iterative E&M training, we first train the LLM with warm-up dataset, similar to the cold start process in previous work.
