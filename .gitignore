@@ -5,6 +5,7 @@ index.html
 *.log
 *.pyc
 .DS_Store
+.idea
 *.zip
 /data/*
 /deprecate/*
