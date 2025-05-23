@@ -40,4 +40,4 @@
 }
 ```
 
-> Full dataset will be released as soon as possible.
+> Due to the conference requirements, `full dataset` and all the checkpoints will be released after the anonymous peer review period.

@@ -131,6 +131,30 @@ Note that:
 
 ![img.png](./assets/image/case.png)
 
+## Experiment Results
+
+### End-to-end Evaluation
+We report the Exact match, Accuracy, and F1 score for evaluation.
+
+![main.png](./assets/image/main.png)
+
+### Retrieval Performance Evaluation
+
+![retrieval.png](./assets/image/retrieval.png)
+
+### Apply to Various Backbone LLMs
+
+![retrieval.png](./assets/image/more.png)
+
+### Customized Retrieval Action
+
+We add a document re-ranking action in our vanilla ExSearch framework.
+
+![retrieval.png](./assets/image/rank.png)
+
+> Due to the conference requirements, we will release all the checkpoints and data after the anonymous peer review period.
+
+
 # Acknowledgement
 We sincerely thank prior work, including [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
 
