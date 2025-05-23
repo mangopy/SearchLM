@@ -12,7 +12,6 @@ index.html
 /deprecate/*
 *.tsv
 /wandb/*
-*.json
 *.jsonl
 *.pkl
 *.out
