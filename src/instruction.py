@@ -3,9 +3,9 @@ from typing import List, Union
 from src.utilize.utilize import *
 
 
-THINK_TOKEN = "<QUERY>"
+THINK_TOKEN = "<THINK>"
 SEARCH_TOKEN = "<SEARCH>"
-FACT_TOKEN = "<FACT>"
+FACT_TOKEN = "<RECORD>"
 FINAL_TOKEN = "<FINAL>"
 
 PROMPT = f"""You are an intelligent search agent capable of simulating a question-answering process by actively seeking information from Wikipedia to answer a given question.
