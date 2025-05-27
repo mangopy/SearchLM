@@ -10,7 +10,7 @@
         },
         {
             "role": "assistant",
-            "content": "<QUERY> Which hurricanes caused the Swannanoa River to flood?"
+            "content": "<THINK> Which hurricanes caused the Swannanoa River to flood?"
         },
         {
             "role": "user",
@@ -18,7 +18,7 @@
         },
         {
             "role": "assistant",
-            "content": "<FACT> Hurricane Frances and Hurricane Ivan\n<QUERY> Which of these hurricanes was a Category 5 hurricane?"
+            "content": "<RECORD> Hurricane Frances and Hurricane Ivan\n<THINK> Which of these hurricanes was a Category 5 hurricane?"
         },
         {
             "role": "user",
@@ -26,7 +26,7 @@
         },
         {
             "role": "assistant",
-            "content": "<FACT> Hurricane Ivan\n<FINAL>"
+            "content": "<RECORD> Hurricane Ivan\n<FINAL>"
         },
         {
             "role": "user",
@@ -40,4 +40,4 @@
 }
 ```
 
-> Due to the conference requirements, `full dataset` and all the checkpoints will be released after the anonymous peer review period.
+> `full dataset` and all the checkpoints will be released after the anonymous peer review period.
