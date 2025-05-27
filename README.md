@@ -152,7 +152,7 @@ We add a document re-ranking action in our vanilla ExSearch framework.
 
 ![retrieval.png](./assets/image/rank.png)
 
-> Due to the conference requirements, we will release all the checkpoints and data after the anonymous peer review period.
+> All the checkpoints and data will be released after the anonymous peer review period.
 
 
 # Acknowledgement
