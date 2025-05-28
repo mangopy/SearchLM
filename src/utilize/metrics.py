@@ -3,7 +3,6 @@ import re
 import string
 from typing import List
 
-# 常见词汇列表，包括介词、冠词、代词、连词、助动词、否定词和疑问词
 common_words = {
     "in", "on", "at", "to", "for", "with", "by", "from", "about",
     "a", "an", "the",
@@ -12,9 +11,7 @@ common_words = {
     "is", "are", "was", "were", "do", "does", "did", "have", "has", "had", "having", "be", "been", "being",
     "not", "no", "nor", "none",
     "what", "where", "when", "who", "why", "how", "which", "whom", "whose",
-    # 常用标点符号
     ".", ",", "!", "?", ";", ":", "-", "(", ")", "[", "]", "{", "}", "\"", "'", "...", "--", "/", "\\", "|", "<", ">", "=", "+", "*", "&", "^", "%", "$", "#", "@", "~", "`",
-    # 其他常见停用词
     "of", "that", "this", "these", "those", "such", "there", "here", "all", "any", "both", "each", "few", "more", "some", "most", "other", "another", "every", "either", "neither"
 }
 
