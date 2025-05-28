@@ -22,7 +22,6 @@ def printf(text):
 logger = logging.getLogger()
 
 def calculate_probability(cumulative_logprob):
-    """根据累积对数概率计算生成概率"""
     probability = math.exp(cumulative_logprob)
     return probability
 
@@ -38,25 +37,6 @@ def remove_duplicate(response):
         if c not in new_response:
             new_response.append(c)
     return new_response
-
-# import re
-# import string
-# import regex
-# import unicodedata
-# def extract_numbers_from_ordered_brackets(text):
-#     text = text.strip()
-#     if text!="" and text[0] != '[':
-#         text = '[' + text
-#     # 更新正则表达式模式：允许方括号内的数字前后有空格
-#     pattern = r'\[\s*(\d+)\s*\]'
-
-#     # 使用 re.findall 查找所有匹配
-#     matches = re.findall(pattern, text)
-
-#     # 将匹配的字符串数字转换为整数并返回  
-#     rank = [int(match) for match in matches]
-#     return remove_duplicate(rank)
-
 
 def extract_numbers_from_ordered_brackets(text: str):
     new_response = ''
