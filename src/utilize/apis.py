@@ -5,7 +5,7 @@ import time
 import random
 import requests
 
-api_search = "http://10.96.202.234:8893"
+api_search = "http://10.96.202.234:8893" # default retriever port
 
 def document_retrieval(query, k=20):
     url = f'{api_search}/api/search?query={query}&k={k}'
@@ -20,8 +20,7 @@ def document_retrieval(query, k=20):
 
 
 api_keys_list = [
-    ('sk-LyjNjNUGmBs0xTftABbAq9m0WDDCQPKuLM6y3Y4tVHQMQCQK', 'https://api.chatanywhere.tech/v1'),
-    ('sk-ScLGcKDUbasUIccuFa7uTRw3BSfvNzb22B4AtNfSyBmtpbAH', 'https://api.chatanywhere.tech/v1'),
+    ('YOUR_API_KEY', 'YOUR_BASE_URL'),
 ]
 
 def get_from_openai(model_name='gpt-3.5-turbo', messages=None, prompt=None, stop=None, max_len=1000, temp=1, n=1,
