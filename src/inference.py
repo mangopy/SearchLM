@@ -14,9 +14,8 @@ import random
 
 logger = logging.getLogger('evaluation')
 
-global_log = '/root/paddlejob/workspace/env_run/output/global_log'
-# WARM_UP_FILE = '/root/paddlejob/workspace/env_run/output/searchagent/hotpot-traj.all.json'
-WARM_UP_FILE = '/root/paddlejob/workspace/env_run/output/searchagent/hotpot-traj.all.11771.json'
+global_log = '~/global_log'
+WARM_UP_FILE = '/path/to/hotpot-traj.all.11771.json'
 
 class RAGEvaluator:
     @staticmethod
@@ -64,10 +63,6 @@ def paralle_launch(model_name, file, data, devices):
     return cache
 
     
-# /root/paddlejob/workspace/env_run/output/SearchAgent/agent0/checkpoint-240
-# /root/paddlejob/workspace/env_run/output/SearchAgent/agent1/checkpoint-339
-# bamboogle, hotpotqa_train
-# /root/paddlejob/workspace/env_run/output/SearchAgent/agent2_musique/checkpoint-300
 
 def create_output_file(model_name, input_file, file_type, left, right):
     def parse_model_name(model_name):
