@@ -68,7 +68,7 @@ PROCEDURE=sft CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 nohup torchrun   --nproc_per_
 --learning_rate 2.0e-6 \
 --num_train_epochs 2 \
 --lr_scheduler_type cosine \
---bf16 True & \
+--bf16 True \
 --resume_from_checkpoint /root/paddlejob/workspace/env_run/output/SearchAgent/agent2_musique/checkpoint-200  &
 ```
 
