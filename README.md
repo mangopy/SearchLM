@@ -11,6 +11,12 @@ If you like our project, please give us a star ⭐ on GitHub for the latest upda
 This work proposes the `ExSearch` which enable the LLMs as search agents, which can actively seek information, select key knowledge and record useful evidence iteratively and summarize the final answer. Compared with previous RAG methods, the key of our agentic search is the reasoning technique. Here is a concrete example of our agentic search.
 
 
+## News
+
+- **[2025.9.19]** Our paper has been accepted by the [NeurIPS 2025](https://neurips.cc/) 🎉🎉🎉!
+- **[2025.5.25]** Our code was released, including main code for evaluation and training script. 
+- **[2025.5.20]** The first version of our paper has been released in arxiv. See our paper in this [link](https://arxiv.org/abs/2505.20128).
+
 # Environment
 
 1. Install the necessary Python libraries by running the following commands.
