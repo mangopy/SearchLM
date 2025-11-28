@@ -142,23 +142,21 @@ Note that:
 ### End-to-end Evaluation
 We report the Exact match, Accuracy, and F1 score for evaluation.
 
-![main.png](./assets/image/main.png)
+<img src="./assets/image/main.png" width="80%">
 
 ### Retrieval Performance Evaluation
 
-![retrieval.png](./assets/image/retrieval.png)
+<img src="./assets/image/retrieval.png" width="80%">
 
 ### Apply to Various Backbone LLMs
 
-![retrieval.png](./assets/image/more.png)
+<img src="./assets/image/more.png" width="80%">
 
 ### Customized Retrieval Action
 
 We add a document re-ranking action in our vanilla ExSearch framework.
 
-![retrieval.png](./assets/image/rank.png)
-
-> All the checkpoints and data will be released after the anonymous peer review period.
+<img src="./assets/image/rank.png" width="80%">
 
 
 # Acknowledgement
