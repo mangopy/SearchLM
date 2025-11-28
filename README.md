@@ -133,35 +133,13 @@ Note that:
 1. Adding the `--resume_from_checkpoint OUTPUT_CHECKPOINT_FOLDER` argument if the training is broken and you want to continue the training.
 2. You can customize the arguments like `per_device_train_batch_size`, `gradient_accumulation_steps` and `training epoch` based on your own computational resource.
 
-## Case
-
-![img.png](./assets/image/case.png)
-
-## Experiment Results
-
-### End-to-end Evaluation
-We report the Exact match, Accuracy, and F1 score for evaluation.
-
-<img src="./assets/image/main.png" width="80%">
-
-### Retrieval Performance Evaluation
-
-<img src="./assets/image/retrieval.png" width="80%">
-
-### Apply to Various Backbone LLMs
-
-<img src="./assets/image/more.png" width="80%">
-
-### Customized Retrieval Action
-
-We add a document re-ranking action in our vanilla ExSearch framework.
-
-<img src="./assets/image/rank.png" width="80%">
-
 
 # Acknowledgement
 We sincerely thank prior work, including [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
 
+# Dataset
+
+See `./data` folder for more details. We have released the annotated cold-start data. Please download it!
 
 # Citation
 ```txt
