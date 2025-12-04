@@ -143,5 +143,10 @@ See `./data` folder for more details. We have released the annotated cold-start 
 
 # Citation
 ```txt
-
+@article{shi2025iterative,
+  title={Iterative self-incentivization empowers large language models as agentic searchers},
+  author={Shi, Zhengliang and Yan, Lingyong and Yin, Dawei and Verberne, Suzan and de Rijke, Maarten and Ren, Zhaochun},
+  journal={arXiv preprint arXiv:2505.20128},
+  year={2025}
+}
 ```
