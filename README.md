@@ -59,7 +59,7 @@ wandb login
 (`wandb login --relogin` to force relogin)
 
 
-# Train your Search LLMs via Expectation-Maximization
+# Incentivize Your Search LLMs via Expectation-Maximization
 
 ## Warmup training
 Before the iterative E&M training, we first train the LLM with warm-up dataset, similar to the cold start process in previous work.
