@@ -145,7 +145,7 @@ Note that:
 
 
 # Acknowledgement
-We sincerely thank prior work, including [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main) and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
+We sincerely thank prior work, including [ColBERT](https://github.com/stanford-futuredata/ColBERT/tree/main), [RankGPT](https://github.com/sunnweiwei/RankGPT), and [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory/tree/main).
 
 # Dataset
 
