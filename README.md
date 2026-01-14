@@ -4,14 +4,15 @@
 </div>
 
 <div align="center">
+   
 [![Project](https://img.shields.io/badge/PROJECT-Reading--List-2D8CFF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mangopy/Deep-Research-Survey)
 [![Status](https://img.shields.io/badge/STATUS-Active-brightgreen?style=for-the-badge)]()
 [![arXiv](https://img.shields.io/badge/arXiv-2505.20128-b31b1b?style=for-the-badge)](https://arxiv.org/abs/2505.20128)
 [![NeurIPS](https://img.shields.io/badge/NeurIPS-2025--Poster-4B0082?style=for-the-badge)](https://neurips.cc/virtual/2025/loc/san-diego/poster/115713)
 [![Slides](https://img.shields.io/badge/Slides-Google--Slides-F4B400?style=for-the-badge&logo=googleslides&logoColor=white)](https://docs.google.com/presentation/d/1PinLZukBJ1c0WfbxONCWavCspPK-7tF7EZZWTi4slJk/edit)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mangopy/SearchLM)
-</div>
 
+</div>
 
 If you like our project, please give us a star ⭐ on GitHub for the latest update.
 
